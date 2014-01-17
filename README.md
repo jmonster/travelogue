@@ -195,6 +195,7 @@ Some settings must be passed into the Hapi plugins architecture.
         - `failureRedirect` - redirect to this relative URL on failed logins. Defaults to **'/login'**.
         - `successRedirect` - redirect to this relative URL on successful logins. Defaults to **'/'**.
     - `excludePaths` - array of string paths that will not employ travelogue authorization or authentication; these paths will be excluded from Travelogue.
+    - `apiMode` - boolean to disable redirects and instead respond with 204 (success) and 401 (failure) status codes.
 
 
 Returns null.
